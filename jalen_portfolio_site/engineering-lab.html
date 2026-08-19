@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Jalen Simpson's Engineering Lab — personal R&D, prototypes, technical explorations, and creative engineering experiments." />
+  <title>Engineering Lab — Jalen Simpson</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/styles.css" />
+</head>
+<body>
+
+  <header class="site-header">
+    <a class="brand" href="index.html">JS</a>
+
+    <nav>
+      <a href="index.html#work">Work</a>
+      <a href="engineering-lab.html" aria-current="page">Lab</a>
+      <a href="index.html#about">About</a>
+      <a href="index.html#experience">Experience</a>
+      <a href="index.html#contact">Contact</a>
+    </nav>
+
+    <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+      <span class="theme-icon">◐</span>
+    </button>
+  </header>
+
+  <main>
+
+    <!-- =====================================================
+         HERO
+         ===================================================== -->
+    <section class="section lab-hero">
+      <p class="eyebrow">Personal R&amp;D · Engineering Lab</p>
+
+      <h1>Built because I wanted to know if I could.</h1>
+
+      <p class="hero-copy">
+        My personal projects are where I deliberately step outside what I already know.
+        I use them to attack my weaknesses head on and teach myself new disciplines, turn curiosity into prototypes, and
+        connect mechanical design, electronics, software, fabrication, and art. Welcome to my engineering lab!
+      </p>
+
+      <div class="lab-thesis glass-card">
+        <div>
+          <p class="eyebrow">The mindset</p>
+          <h2>Start with creative intent. Engineer toward the experience.</h2>
+        </div>
+        <p>
+          My primary interest lie in the experience of a system's interaction with it's individual components. I start with what the
+          experience should feel like, then learning and combining the systems required to make it real. As I've learned, 
+          this takes time, iteration, and a willingness to fail. The goal is not to rush and finish the project, but to learn from the process.
+          These projects displayed are intentionally shown in motion, not only after they're finished. 
+        </p>
+      </div>
+
+      <div class="intent-flow" aria-label="Creative engineering process">
+        <div><span>01</span><strong>Creative Intent</strong><small>What should this feel like?</small></div>
+        <i>→</i>
+        <div><span>02</span><strong>Learn</strong><small>What do I need to know?</small></div>
+        <i>→</i>
+        <div><span>03</span><strong>Prototype</strong><small>Make the idea physical.</small></div>
+        <i>→</i>
+        <div><span>04</span><strong>Integrate</strong><small>Make the systems work together.</small></div>
+        <i>→</i>
+        <div><span>05</span><strong>Experience</strong><small>Does it create the intended effect?</small></div>
+      </div>
+    </section>
+
+
+    <!-- =====================================================
+         DEVELOPMENT LANGUAGE
+         ===================================================== -->
+    <section class="section lab-stage-section">
+      <div class="section-heading">
+        <p class="eyebrow">Development Language</p>
+        <h2>Where each idea is now.</h2>
+        <p>
+          My personal work is rarely a binary status of unfinished or finished. I track my projects by the kind of
+          engineering question I'm looking to answer. 
+        </p>
+      </div>
+
+      <div class="stage-key">
+        <div><span>01</span><strong>Discovery</strong><p>Define the intent, research the system, identify what I need to learn.</p></div>
+        <div><span>02</span><strong>Proof of Concept</strong><p>Prove the core idea can work before optimizing it.</p></div>
+        <div><span>03</span><strong>System Development</strong><p>Build the mechanical, electronic, software, or fabrication subsystems.</p></div>
+        <div><span>04</span><strong>Integration</strong><p>Connect subsystems and solve the problems that appear between them.</p></div>
+        <div><span>05</span><strong>Refinement</strong><p>Improve reliability, packaging, usability, fidelity, and finish.</p></div>
+      </div>
+    </section>
+
+
+    <!-- =====================================================
+         WEB SHOOTER
+         ===================================================== -->
+    <section class="section lab-project" id="web-shooter">
+      <div class="lab-project-top">
+        <div>
+          <p class="eyebrow">Embedded Systems · Mechanical Design · Wearable Technology</p>
+          <h2>Wearable Web-Shooter</h2>
+        </div>
+        <span class="status-pill">System Development</span>
+      </div>
+
+      <div class="development-rail" aria-label="Web-Shooter development stage">
+        <div class="rail-step complete"><span></span><small>Discovery</small></div>
+        <div class="rail-line complete"></div>
+        <div class="rail-step complete"><span></span><small>Proof of Concept</small></div>
+        <div class="rail-line complete"></div>
+        <div class="rail-step current"><span></span><small>System Development</small></div>
+        <div class="rail-line"></div>
+        <div class="rail-step"><span></span><small>Integration</small></div>
+        <div class="rail-line"></div>
+        <div class="rail-step"><span></span><small>Refinement</small></div>
+      </div>
+
+      <div class="lab-project-grid">
+        <div class="lab-story">
+          <p class="lab-label">Why I started</p>
+          <p>
+            I wanted a project that would force me to stop treating electronics as a black box.
+            The web-shooter became my first electronics project at this scale: a wearable device
+            where firmware, wiring, power, actuation, mechanical packaging, and user input all have
+            to work together.
+          </p>
+
+          <p class="lab-label">What I'm teaching myself</p>
+          <ul class="learning-list">
+            <li>Embedded control with ESP32-class hardware</li>
+            <li>Power distribution, grounding, connectors, and reliable wiring</li>
+            <li>Servo and actuator selection based on real mechanical loads</li>
+            <li>Designing mechanisms around packaging and wearable constraints</li>
+            <li>Breaking a complex system into testable subsystems</li>
+          </ul>
+
+          <p class="lab-label">Where I want it to go</p>
+          <p>
+            The long-term goal is a purpose-built wearable system with a custom PCB, cleaner power
+            architecture, compact wiring, stronger mechanical actuation, and packaging designed as
+            one integrated product rather than a collection of development boards and test hardware.
+          </p>
+        </div>
+
+        <aside class="lab-now-card">
+          <p class="lab-label">Right now</p>
+          <h3>Turning a working electronics prototype into a designed system.</h3>
+          <p>
+            The control concept works. The current engineering problem is force, packaging, and how
+            to integrate multiple actuators without letting the electronics dictate the mechanical design.
+          </p>
+
+          <details>
+            <summary>Current questions</summary>
+            <ul>
+              <li>What actuator architecture gives enough force in the available architecture?</li>
+              <li>How small can the power and control package become?</li>
+              <li>What belongs on a future custom PCB?</li>
+              <li>How should the mechanism be designed for serviceability?</li>
+            </ul>
+          </details>
+        </aside>
+      </div>
+
+      <div class="lab-media-grid">
+        <div class="lab-media-placeholder"><span>01</span><strong>Electronics bench test</strong><p>Add a photo or short video.</p></div>
+        <div class="lab-media-placeholder"><span>02</span><strong>Actuation prototype</strong><p>Show the imperfect version too.</p></div>
+        <div class="lab-media-placeholder"><span>03</span><strong>Mechanical concept</strong><p>CAD, sketch, mechanism, or print.</p></div>
+      </div>
+    </section>
+
+
+    <!-- =====================================================
+         IRON MAN
+         ===================================================== -->
+    <section class="section lab-project" id="iron-man">
+      <div class="lab-project-top">
+        <div>
+          <p class="eyebrow">Wearable Systems · Digital Fabrication · Mechatronics</p>
+          <h2>Iron Man Mark 7</h2>
+        </div>
+        <span class="status-pill">System Development</span>
+      </div>
+
+      <div class="development-rail" aria-label="Iron Man development stage">
+        <div class="rail-step complete"><span></span><small>Discovery</small></div>
+        <div class="rail-line complete"></div>
+        <div class="rail-step complete"><span></span><small>Proof of Concept</small></div>
+        <div class="rail-line complete"></div>
+        <div class="rail-step current"><span></span><small>System Development</small></div>
+        <div class="rail-line"></div>
+        <div class="rail-step"><span></span><small>Integration</small></div>
+        <div class="rail-line"></div>
+        <div class="rail-step"><span></span><small>Refinement</small></div>
+      </div>
+
+      <div class="lab-project-grid">
+        <div class="lab-story">
+          <p class="lab-label">Why I started</p>
+          <p>
+            The scale of this project is the point. A full wearable suit forces me to think beyond a
+            single mechanism: fit, mobility, fabrication, surface finish, attachment, weight,
+            electronics, actuation, maintenance, and visual fidelity all compete for the same space.
+          </p>
+
+          <p class="lab-label">What I'm exploring</p>
+          <ul class="learning-list">
+            <li>Turning digital armor geometry into manufacturable, wearable components</li>
+            <li>3D-print segmentation, orientation, assembly, and finishing</li>
+            <li>Human factors: body fitment, clearances, mobility, and articulation</li>
+            <li>Designing internal space for future lighting, wiring, and motion systems</li>
+            <li>How visual design and mechanical function can support the same creative intent</li>
+          </ul>
+
+          <p class="lab-label">Where I want it to go</p>
+          <p>
+            My end goal is not simply a finished costume. I want to evolve it into a wearable
+            mechatronic character system. One where motion, lighting, sound, controls, and physical
+            presence reinforce the illusion of a functional powered suit.
+          </p>
+        </div>
+
+        <aside class="lab-now-card ironman-accent">
+          <p class="lab-label">The challenge I like</p>
+          <h3>Every new subsystem changes the design of the others.</h3>
+          <p>
+            A visually correct panel may block my movement. A servo may fit geometrically but create a
+            power or service problem. A printable part may not be a fully wearable part. That tension is
+            what makes the project useful as an engineering exercise.
+          </p>
+
+          <details>
+            <summary>Next development areas</summary>
+            <ul>
+              <li>Continue fabrication and fitment testing</li>
+              <li>Identify articulation and motorization opportunities</li>
+              <li>Plan internal electronics and wiring architecture</li>
+              <li>Develop repeatable attachment and wiring methods</li>
+            </ul>
+          </details>
+        </aside>
+      </div>
+
+      <div class="lab-media-grid">
+        <div class="lab-media-placeholder"><span>01</span><strong>Digital model / segmentation</strong><p>CAD or slicing screenshots.</p></div>
+        <div class="lab-media-placeholder"><span>02</span><strong>Fabrication</strong><p>Raw prints, assembly, finishing.</p></div>
+        <div class="lab-media-placeholder"><span>03</span><strong>Fit & interaction</strong><p>Wear tests, articulation, mechanisms.</p></div>
+      </div>
+    </section>
+
+
+    <!-- =====================================================
+         SIM RACING
+         ===================================================== -->
+    <section class="section lab-project" id="sim-racing">
+      <div class="lab-project-top">
+        <div>
+          <p class="eyebrow">Immersive Systems · Human-Machine Interaction · Simulation</p>
+          <h2>Sim Racing Environment</h2>
+        </div>
+        <span class="status-pill">Refinement</span>
+      </div>
+
+      <div class="development-rail" aria-label="Sim racing development stage">
+        <div class="rail-step complete"><span></span><small>Discovery</small></div>
+        <div class="rail-line complete"></div>
+        <div class="rail-step complete"><span></span><small>Proof of Concept</small></div>
+        <div class="rail-line complete"></div>
+        <div class="rail-step complete"><span></span><small>System Development</small></div>
+        <div class="rail-line complete"></div>
+        <div class="rail-step complete"><span></span><small>Integration</small></div>
+        <div class="rail-line complete"></div>
+        <div class="rail-step current"><span></span><small>Refinement</small></div>
+      </div>
+
+      <div class="lab-project-grid">
+        <div class="lab-story">
+          <p class="lab-label">Why it belongs here</p>
+          <p>
+            I think of the simulator as an immersive system rather than a collection of gaming hardware.
+            The experience depends on how visual information, force feedback, ergonomics, control inputs,
+            audio, and vehicle behavior combine to convince the driver of something that is not physically happening.
+          </p>
+
+          <p class="lab-label">What it lets me study</p>
+          <ul class="learning-list">
+            <li>Human-machine interaction and control feel</li>
+            <li>Force-feedback tuning and perceived vehicle behavior</li>
+            <li>Ergonomic geometry: sight lines, reach, seating, and controls</li>
+            <li>The relationship between technical fidelity and perceived immersion</li>
+            <li>How multiple sensory systems combine into one coherent experience</li>
+          </ul>
+        </div>
+
+        <aside class="lab-now-card sim-accent">
+          <p class="lab-label">Design question</p>
+          <h3>What actually makes a simulated experience feel believable?</h3>
+          <p>
+            Increasing one specification does not automatically increase immersion. The useful work is
+            understanding how each cue supports or contradicts the others.
+          </p>
+          
+          <details>
+            <summary>Next development areas</summary>
+            <ul>
+              <li>Continue understanding of human factors and ergonomics</li>
+              <li>Identify immersion opportunities such as virtual reality integration</li>
+              <li>Plan new feedback architecture: wind simulation, active ambient lighting</li>
+              <li>Develop new software for audio improvements, potential AI driving coach with voice integration</li>
+            </ul>
+          </details>
+        </aside>
+      </div>
+        </aside>
+      </div>
+    </section>
+
+
+    <!-- =====================================================
+         TECHNICAL SKETCHBOOK
+         ===================================================== -->
+    <section class="section" id="sketchbook">
+      <div class="section-heading">
+        <p class="eyebrow">Technical Sketchbook</p>
+        <h2>Not everything needs to be a project.</h2>
+        <p>
+          These are smaller artifacts that show how I think and what else I can make. This is a living collection
+          of CAD work, STLs, mechanisms, electronics, visual development, drawings, prototypes, and experiments.
+        </p>
+      </div>
+
+      <div class="sketchbook-grid">
+        <article class="sketch-card">
+          <div class="sketch-thumb cad-thumb"><span>CAD</span></div>
+          <div class="sketch-copy">
+            <p class="project-kicker">Mechanical Design</p>
+            <h3>CAD & Mechanisms</h3>
+            <p>Part models, mechanisms, assemblies, design studies, and small solutions that are worth showing even when they are not full projects.</p>
+            <div class="tag-row"><span>SolidWorks</span><span>Rhino</span><span>AutoCAD</span></div>
+          </div>
+        </article>
+
+        <article class="sketch-card">
+          <div class="sketch-thumb print-thumb"><span>STL</span></div>
+          <div class="sketch-copy">
+            <p class="project-kicker">Digital Fabrication</p>
+            <h3>Prints & STLs</h3>
+            <p>Designed parts, modified models, print-ready geometry, fixtures, adapters, costume components, and fabrication experiments.</p>
+            <div class="tag-row"><span>3D Printing</span><span>DFAM</span><span>Prototyping</span></div>
+          </div>
+        </article>
+
+        <article class="sketch-card">
+          <div class="sketch-thumb electronics-thumb"><span>IO</span></div>
+          <div class="sketch-copy">
+            <p class="project-kicker">Electronics</p>
+            <h3>Controls & Bench Experiments</h3>
+            <p>Microcontrollers, sensors, servos, wiring, circuit tests, breadboards, and eventually custom PCB development.</p>
+            <div class="tag-row"><span>ESP32</span><span>Embedded</span><span>Mechatronics</span></div>
+          </div>
+        </article>
+
+        <article class="sketch-card">
+          <div class="sketch-thumb art-thumb"><span>ART</span></div>
+          <div class="sketch-copy">
+            <p class="project-kicker">Visual Development</p>
+            <h3>Art, Graphics & Drawings</h3>
+            <p>Concept art, graphics, Photoshop work, Illustrator assets, sketches, visual studies, and other work that communicates an idea before it becomes hardware.</p>
+            <div class="tag-row"><span>Photoshop</span><span>Illustrator</span><span>Concept</span></div>
+          </div>
+        </article>
+
+        <article class="sketch-card">
+          <div class="sketch-thumb prototype-thumb"><span>R&amp;D</span></div>
+          <div class="sketch-copy">
+            <p class="project-kicker">Experiments</p>
+            <h3>Prototypes & Rabbit Holes</h3>
+            <p>Short technical investigations, failures, proof-of-concept builds, modding experiments, and things I explored simply because the question was interesting.</p>
+            <div class="tag-row"><span>Testing</span><span>Iteration</span><span>Curiosity</span></div>
+          </div>
+        </article>
+
+        <article class="sketch-card sketch-card-add">
+          <div class="sketch-add">+</div>
+          <div class="sketch-copy">
+            <p class="project-kicker">Living Collection</p>
+            <h3>Add the next thing.</h3>
+            <p>Duplicate this card whenever a piece of work says something useful about how you think, design, build, or communicate.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+
+    <!-- =====================================================
+         CONNECTION
+         ===================================================== -->
+    <section class="section lab-connection">
+      <div class="connection-card glass-card">
+        <p class="eyebrow">Connecting the Dots</p>
+        <h2>The goal is to have technical range with a reason.</h2>
+        <p>
+          Mechanical design, embedded electronics, CAD, fabrication, software, visual development,
+          and immersive systems are not separate interests to me. I am learning them because the more
+          of the system I understand, the more completely I can translate creative intent into a working experience.
+          I love engineering for the simple reason that it is the process of turning an idea into a physical reality. The more I can learn, the more I can make.
+        </p>
+        <a class="button primary" href="index.html#work">Back to Selected Work</a>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <span>© 2026 Jalen Simpson</span>
+    <span>Engineering · Creative Technology · Personal R&amp;D</span>
+  </footer>
+
+  <script src="assets/script.js"></script>
+</body>
+</html>
