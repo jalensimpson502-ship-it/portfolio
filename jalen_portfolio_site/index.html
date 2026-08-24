@@ -38,16 +38,125 @@
         <a class="button primary" href="#work">Explore Selected Work</a>
         <a class="button secondary" href="#contact">Get In Touch</a>
       </div>
-      <div class="hero-visual glass-card">
-        <div class="hero-orb orb-one"></div>
-        <div class="hero-orb orb-two"></div>
-        <div class="hero-grid">
-          <span>MECHANICAL</span>
-          <span>AUTOMATION</span>
-          <span>ROBOTICS</span>
-          <span>DATA</span>
-          <span>PROTOTYPING</span>
-          <span>DESIGN</span>
+
+      <!-- FEATURED PROJECT SHOWCASE -->
+      <div class="featured-showcase" aria-label="Featured projects">
+        <div class="showcase-header">
+          <div>
+            <p class="eyebrow">Featured Projects</p>
+            <h2>A quick look at how I work.</h2>
+          </div>
+          <div class="showcase-controls" aria-label="Project slideshow controls">
+            <button class="showcase-arrow" id="showcasePrev" aria-label="Previous featured project">←</button>
+            <button class="showcase-arrow" id="showcaseNext" aria-label="Next featured project">→</button>
+          </div>
+        </div>
+
+        <div class="showcase-viewport" id="featuredShowcase">
+          <div class="showcase-track">
+
+            <article class="showcase-slide is-active">
+              <a class="showcase-card" href="projects/robotic-paint.html">
+                <div class="showcase-media media-a">
+                  <div class="mock-ui showcase-fallback">
+                    <div class="mock-top"></div>
+                    <div class="robot-arm"></div>
+                    <div class="paint-panel"></div>
+                  </div>
+                  <div class="showcase-photo" aria-hidden="true" style="background-image: url('assets/images/highlights/robotic-paint.jpg');"></div>
+                  <span class="showcase-index">01</span>
+                </div>
+                <div class="showcase-copy">
+                  <p class="project-kicker">Professional · Robotics</p>
+                  <h3>Robotic Paint Trial &amp; Process Development</h3>
+                  <p>Controlled testing, process development, robotics, and technical communication in a manufacturing environment.</p>
+                  <span class="showcase-link">Explore project →</span>
+                </div>
+              </a>
+            </article>
+
+            <article class="showcase-slide">
+              <a class="showcase-card" href="projects/prf-analytics.html">
+                <div class="showcase-media media-b">
+                  <div class="dashboard-mock showcase-fallback">
+                    <div class="bar b1"></div><div class="bar b2"></div><div class="bar b3"></div><div class="bar b4"></div>
+                  </div>
+                  <div class="showcase-photo" aria-hidden="true" style="background-image: url('assets/images/highlights/prf-analytics.jpg');"></div>
+                  <span class="showcase-index">02</span>
+                </div>
+                <div class="showcase-copy">
+                  <p class="project-kicker">Professional · Data &amp; Automation</p>
+                  <h3>Power BI KPI &amp; Workflow Analytics</h3>
+                  <p>Turning inconsistent operational data into useful KPI logic, clear dashboards, and a maintainable automated workflow.</p>
+                  <span class="showcase-link">Explore project →</span>
+                </div>
+              </a>
+            </article>
+
+            <article class="showcase-slide">
+              <a class="showcase-card" href="projects/storeroom-standardization.html">
+                <div class="showcase-media media-e">
+                  <div class="cad-mock showcase-fallback">
+                    <div class="cad-box one"></div><div class="cad-box two"></div><div class="cad-box three"></div>
+                  </div>
+                  <div class="showcase-photo" aria-hidden="true" style="background-image: url('assets/images/highlights/storeroom-standardization.jpg');"></div>
+                  <span class="showcase-index">03</span>
+                </div>
+                <div class="showcase-copy">
+                  <p class="project-kicker">Professional · CAD &amp; Systems</p>
+                  <h3>North American Storeroom Standardization</h3>
+                  <p>Field measurement, CAD mapping, cross-site comparison, and recommendations across a 15-site manufacturing study.</p>
+                  <span class="showcase-link">Explore project →</span>
+                </div>
+              </a>
+            </article>
+
+            <article class="showcase-slide">
+              <a class="showcase-card" href="engineering-lab.html#iron-man">
+                <div class="showcase-media media-ironman">
+                  <div class="ironman-mock showcase-fallback">
+                    <div class="ironman-head"></div>
+                    <div class="ironman-chest"><div class="arc-reactor"></div></div>
+                  </div>
+                  <div class="showcase-photo" aria-hidden="true" style="background-image: url('assets/images/highlights/iron-man.jpg');"></div>
+                  <span class="showcase-index">04</span>
+                </div>
+                <div class="showcase-copy">
+                  <p class="project-kicker">Engineering Lab · Wearable Systems</p>
+                  <h3>Iron Man Wearable System</h3>
+                  <p>A long-term exploration of fabrication, body fitment, mechanisms, electronics, and the experience of making a fictional system feel real.</p>
+                  <span class="showcase-link">Enter the lab →</span>
+                </div>
+              </a>
+            </article>
+
+            <article class="showcase-slide">
+              <a class="showcase-card" href="engineering-lab.html#web-shooter">
+                <div class="showcase-media media-d">
+                  <div class="device-mock showcase-fallback">
+                    <div class="wrist"></div><div class="device"></div><div class="wire"></div>
+                  </div>
+                  <div class="showcase-photo" aria-hidden="true" style="background-image: url('assets/images/highlights/web-shooter.jpg');"></div>
+                  <span class="showcase-index">05</span>
+                </div>
+                <div class="showcase-copy">
+                  <p class="project-kicker">Engineering Lab · Embedded Systems</p>
+                  <h3>Wearable Web-Shooter</h3>
+                  <p>My first electronics project at this scale—using embedded control, actuation, rapid prototyping, and mechanical packaging to build toward a custom integrated system.</p>
+                  <span class="showcase-link">Enter the lab →</span>
+                </div>
+              </a>
+            </article>
+
+          </div>
+        </div>
+
+        <div class="showcase-dots" aria-label="Select featured project">
+          <button class="showcase-dot is-active" data-slide="0" aria-label="Show project 1"></button>
+          <button class="showcase-dot" data-slide="1" aria-label="Show project 2"></button>
+          <button class="showcase-dot" data-slide="2" aria-label="Show project 3"></button>
+          <button class="showcase-dot" data-slide="3" aria-label="Show project 4"></button>
+          <button class="showcase-dot" data-slide="4" aria-label="Show project 5"></button>
         </div>
       </div>
     </section>
@@ -307,7 +416,7 @@
 
     <div class="lab-home-links">
       <a href="engineering-lab.html#web-shooter">Web-Shooter <span>System Development</span></a>
-      <a href="engineering-lab.html#iron-man">Iron Man Mark 7 <span>System Development</span></a>
+      <a href="engineering-lab.html#iron-man">Iron Man Mark 7 <span>Proof of Concept</span></a>
       <a href="engineering-lab.html#sim-racing">Sim Racing <span>Refinement</span></a>
       <a href="engineering-lab.html#sketchbook">Technical Sketchbook <span>Living Collection</span></a>
     </div>
@@ -330,7 +439,7 @@
 
     <section id="about" class="section split-section">
       <div>
-        <p class="eyebrow">About Me</p>
+        <p class="eyebrow">About</p>
         <h2>Engineering with a creative mindset.</h2>
       </div>
       <div class="large-copy">

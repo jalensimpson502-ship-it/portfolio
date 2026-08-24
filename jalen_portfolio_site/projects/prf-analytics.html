@@ -3,64 +3,196 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>PRF KPI & Workflow Analytics — Jalen Simpson</title>
+  <meta name="description" content="Power BI KPI & Workflow Analytics engineering project by Jalen Simpson." />
+  <title>Power BI KPI & Workflow Analytics — Jalen Simpson</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../assets/styles.css" />
 </head>
-<body>
+<body class="pbi-page">
   <header class="site-header">
     <a class="brand" href="../index.html">JS</a>
     <nav>
       <a href="../index.html#work">Work</a>
+      <a href="../engineering-lab.html">Lab</a>
       <a href="../index.html#about">About</a>
       <a href="../index.html#experience">Experience</a>
       <a href="../index.html#contact">Contact</a>
     </nav>
+    <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode"><span class="theme-icon">◐</span></button>
   </header>
 
   <main>
-    <section class="section case-hero">
+    <section class="section case-hero pro-case-hero">
       <p class="eyebrow">Analytics · Power BI · Automation</p>
-      <h1>PRF KPI & Workflow Analytics</h1>
-      <p class="hero-copy">An operations-focused dashboard and data workflow designed to reveal bottlenecks, completion performance, open-study status, and late-work drivers. *Note: Due to NDA, not all details can be disclosed.</p>
-      <div class="case-summary">
-        <div><span>Role</span><strong>Plant/Facilities Engineering Co-Op</strong></div>
+      <h1>Power BI KPI & Workflow Analytics</h1>
+      <p class="hero-copy">An operational analytics system built to turn inconsistent and messy study data into detailed KPI logic, clear workflow visibility, and a maintainable reporting process.</p>
+      <div class="nda-note">Selected details are generalized to respect confidentiality.</div>
+
+      <div class="pro-summary-grid">
         <div><span>Context</span><strong>Operational Analytics</strong></div>
-        <div><span>Focus</span><strong>Workflow Visibility</strong></div>
-        <div><span>Tools</span><strong>Power BI, DAX, Power Query</strong></div>
-        <div><span>Outcome</span><strong>Clearer KPI Reporting for Executive Leadership</strong></div>
+        <div><span>Scope</span><strong>Workflow Visibility · KPI Design · Automation</strong></div>
+        <div><span>Technical Stack</span><strong>Power BI · DAX · Power Query · Power Automate · SharePoint</strong></div>
+        <div><span>Real-World Impact</span><strong>Clearer workload / lateness visibility with less manual interpretation</strong></div>
       </div>
     </section>
 
-    <article class="case-body">
-      <div class="media-placeholder">Replace this block with your strongest photo, short autoplay-muted video, CAD render, dashboard screenshot, or test footage.</div>
+    <section class="pbi-system-strip">
 
-      <h2>The Challenge</h2>
-      <p>Operational study data contained inconsistent status logic, duplicated fiscal-year labels, missing dates, outliers, and multiple definitions of completion and lateness.</p>
+  <div class="pbi-system-heading">
+    <p class="eyebrow">System Architecture</p>
 
-      <h2>My Approach</h2>
-      <p>I developed cleaned logic, status classifications, fiscal-year handling, late-day categories, completion flags, and dashboard measures intended to make the reporting useful to both individual contributors and leadership. Then, to make data collection and updating easier, I decided to automate the entire process for after my co-op rotation ended.</p>
+    <h2>
+      Turning messy records into usable information.
+    </h2>
+  </div>
 
-      <h2>Engineering & Iteration</h2>
-      <p>The dashboard evolved as edge cases appeared. Using kaizen principles, I refined filters, classification logic, outlier handling, fiscal-year rules, and definitions of open versus completed work so the visualizations reflected operational reality.</p>
+  <div class="pbi-system-flow">
 
-      <h2>Result</h2>
-      <p>The end product made it easier to understand workload, completion behavior, late work, and data-quality gaps while reducing the need to manually interpret raw records.</p>
+    <div>
+      <span>01</span>
+      <strong>Source Data</strong>
+      <small>Operational study records</small>
+    </div>
 
-      <h2>Media / Report embed</h2>
-      <p>You can replace the placeholder below with a YouTube/Vimeo embed, Microsoft PowerPoint embed, or PDF viewer iframe.</p>
-      <div class="embed-shell">
-        <div class="media-placeholder">Paste an iframe embed here when you are ready.</div>
-      </div>
+    <i>→</i>
 
-      <h2>What I Learned</h2>
-      <p>The biggest lesson was that a good dashboard is really a systems-design problem: the hardest work is often defining trustworthy logic before visualizing anything. In the end, I also learned a lot about the importance of data quality and the iterative nature of dashboard development.</p>
+    <div>
+      <span>02</span>
+      <strong>Clean & Validate</strong>
+      <small>Dates · Status · Missing data</small>
+    </div>
 
-      <p style="margin-top:64px;"><a class="text-link" href="../index.html#work">← Back to selected work</a></p>
+    <i>→</i>
+
+    <div>
+      <span>03</span>
+      <strong>Business Logic</strong>
+      <small>DAX · Classifications · Outliers</small>
+    </div>
+
+    <i>→</i>
+
+    <div>
+      <span>04</span>
+      <strong>Power BI Model</strong>
+      <small>Measures · Relationships · Drilldowns</small>
+    </div>
+
+    <i>→</i>
+
+    <div>
+      <span>05</span>
+      <strong>Decision Support</strong>
+      <small>Workload · Lateness · Completion</small>
+    </div>
+
+  </div>
+
+</section>
+
+      <section class="contribution-panel">
+        <div class="contribution-heading">
+          <p class="eyebrow">My Contribution</p>
+          <h2>What I did.</h2>
+          <p>For the most part, I owned this project from the start. I relied on the expertise of my managers to understand the business needs and translate them into a technical solution.</p>
+        </div>
+        <div class="contribution-list">
+          <div class="contribution-item"><span>01</span><p>Defined and cleaned status logic for open, completed, late, and missing-data conditions.</p></div>
+<div class="contribution-item"><span>02</span><p>Built DAX measures and calculated logic for completion, aging, schedule gap, late-day buckets, and outlier handling.</p></div>
+<div class="contribution-item"><span>03</span><p>Created dashboard views that let users move from executive KPIs into owner and study-level detail.</p></div>
+<div class="contribution-item"><span>04</span><p>Resolved inconsistent fiscal-year labels and edge cases that distorted reporting.</p></div>
+<div class="contribution-item"><span>05</span><p>Automated the data-import workflow so the reporting process could continue with less manual maintenance after my rotation ended.</p></div>
+        </div>
+        <div class="collaboration-strip">
+          <span>Collaboration</span>
+          <strong>Plant Engineering Planning Group · Study Owners · Leadership · Data Users</strong>
+        </div>
+      </section>
+
+      <section class="pro-story-grid">
+        <div class="pro-story-card">
+          <span>01</span>
+          <p class="eyebrow">The Problem</p>
+          <h3>What needed to be solved?</h3>
+          <p>The raw data was not ready to visualize. Inconsistent status definitions, duplicate fiscal-year labels, missing dates, outliers, and multiple interpretations of lateness meant that a polished dashboard could still tell the wrong story.</p>
+        </div>
+        <div class="pro-story-card">
+          <span>02</span>
+          <p class="eyebrow">My Approach</p>
+          <h3>How I attacked it.</h3>
+          <p>I started by defining a proper business logic, then built the measures and visuals around those definitions. As edge cases surfaced, I iterated on the model instead of forcing the data to fit the original dashboard design.</p>
+        </div>
+        <div class="pro-story-card">
+          <span>03</span>
+          <p class="eyebrow">Impact</p>
+          <h3>Why the work mattered.</h3>
+          <p>The finished workflow made open workload, completion performance, lateness, and data-quality gaps easier to understand while reducing the need to manually interpret raw records.</p>
+        </div>
+      </section>
+
+      <section class="process-section">
+        <div class="section-heading compact-heading">
+          <p class="eyebrow">Process Notes</p>
+          <h2>From Start to Finish.</h2>
+        </div>
+        <div class="process-rail">
+          <div class="process-step"><span>01</span><strong>Define</strong><p>Agree on what open, complete, late, and missing actually mean to leadership.</p></div>
+<div class="process-step"><span>02</span><strong>Clean</strong><p>Normalize dates, fiscal years, status values, and outlier behavior.</p></div>
+<div class="process-step"><span>03</span><strong>Model</strong><p>Build measures and calculated logic that reflect operational reality.</p></div>
+<div class="process-step"><span>04</span><strong>Validate</strong><p>Test edge cases and drill into records when a visual doesn't make sense.</p></div>
+<div class="process-step"><span>05</span><strong>Automate</strong><p>Reduce manual maintenance by connecting the reporting workflow to its source data.</p></div>
+        </div>
+      </section>
+
+      <section class="artifact-section representative-dashboard-section">
+
+  <div class="section-heading compact-heading dashboard-heading">
+
+    <p class="eyebrow">
+      Representative Dashboard
+    </p>
+
+    <h2>
+      Quick view of why it was something usable.
+    </h2>
+
+    <p>
+      The original dashboard contains confidential project information.
+      This visualization was roughly recreated with simulated data to demonstrate
+      the structure, KPI approach, and analytical intent of the system.
+    </p>
+
+  </div>
+
+
+  <figure class="single-artifact">
+
+    <img
+      class="portfolio-dashboard"
+      src="../assets/images/professional/pbi/KPI Dashboard sanitized.png"
+      alt="Representative request management dashboard recreated with simulated data"
+    >
+
+    <figcaption>
+      Representative dashboard recreated with false data to protect classified information.
+      No real operational data is shown.
+    </figcaption>
+
+  </figure>
+
+</section>
+
+      <section class="takeaway-card">
+        <p class="eyebrow">Takeaway</p>
+        <h2>Organizing data properly was a major key in keeping the efforts of the planning team on track, allowing the group to kaizen where needed, and make decisions on prioritizing certain tasks over others. </h2>
+      </section>
+
+      <p class="case-back"><a class="text-link" href="../index.html#work">← Back to selected work</a></p>
     </article>
   </main>
+
   <script src="../assets/script.js"></script>
 </body>
 </html>
