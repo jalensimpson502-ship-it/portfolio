@@ -9,6 +9,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/styles.css" />
+  <link rel="stylesheet" href="assets/sketchbook/sketchbook.css">
 </head>
 <body>
 
@@ -23,7 +24,7 @@
       <a href="index.html#contact">Contact</a>
     </nav>
 
-    <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+    <button class="theme-toggle" id="themeToggle" type="button" aria-label="Toggle dark mode">
       <span class="theme-icon">◐</span>
     </button>
   </header>
@@ -42,6 +43,7 @@
         My personal projects are where I deliberately step outside what I already know.
         I use them to attack my weaknesses head on and teach myself new disciplines, turn curiosity into prototypes, and
         connect mechanical design, electronics, software, fabrication, and art. Welcome to my engineering lab!
+      </p>
 
       <div class="lab-thesis glass-card">
         <div>
@@ -168,14 +170,14 @@
 
   <figure class="lab-media-hero">
 
-    <img
+    <img loading="lazy"
       src="assets/images/personal/web-shooter/electronics3.jpg"
       alt="Early electronics prototype for the wearable web-shooter"
     >
 
     <figcaption>
       Early electronics prototype used to validate the controller,
-      switch, servo, and power architecture before mechanical packaging.
+      switch, servo, and power architecture before mechanical packaging. This was my first ever attempt at soldering. 
     </figcaption>
 
   </figure>
@@ -205,6 +207,7 @@
   </figure>
 
 </section>
+    </section>
 
     <!-- =====================================================
          IRON MAN
@@ -281,7 +284,7 @@
 
   <figure class="lab-media-hero">
 
-    <img
+    <img loading="lazy"
       src="assets/images/personal/iron-man/build.jpg"
       alt="Current physical build of the Iron Man wearable project"
     >
@@ -298,7 +301,7 @@
 
     <figure>
 
-      <img
+      <img loading="lazy"
         class="media-contain"
         src="assets/images/personal/iron-man/chest-cad.png"
         alt="CAD work for the Iron Man chest assembly"
@@ -313,7 +316,7 @@
 
     <figure>
 
-      <img
+      <img loading="lazy"
         src="assets/images/personal/iron-man/arc-reactor.jpg"
         alt="Illuminated arc reactor prototype"
       >
@@ -350,7 +353,7 @@
 </figure>
 
 </section>
-
+    </section>
 
     <!-- =====================================================
          SIM RACING
@@ -375,8 +378,178 @@
         <div class="rail-line complete"></div>
         <div class="rail-step current"><span></span><small>Refinement</small></div>
       </div>
+      <div class="sim-opening-grid">
 
-      <div class="lab-project-grid">
+        <figure class="sim-video-figure">
+          <video
+            class="lab-project-video sim-racing-video"
+            autoplay
+            muted
+            loop
+            playsinline
+            preload="metadata"
+          >
+            <source
+              src="assets/videos/personal/sim-racing/sim-racing-driving-demo.mp4"
+              type="video/mp4"
+            >
+          </video>
+
+          <figcaption>
+            Driving demonstration of the current simulator setup and driver-feedback environment.
+          </figcaption>
+        </figure>
+
+        <div class="sim-question">
+          <p class="eyebrow">The Engineering Question</p>
+          <h3>
+            How can a stationary simulator communicate the behavior
+            of a moving vehicle to the driver?
+          </h3>
+          <p>
+            I'm interested in how visual, steering, tactile, and eventually
+            telemetry-driven feedback can work together to create a more
+            convincing connection between simulated vehicle behavior and
+            human perception.
+          </p>
+        </div>
+
+      </div>
+
+      <section class="sim-technical-section">
+
+        <div class="sim-concepts-grid">
+
+          <section class="sim-concept-panel">
+            <div class="sim-system-heading">
+              <p class="eyebrow">Human-Machine Interaction</p>
+              <h3>Designing feedback around human perception.</h3>
+              <p>
+                A fixed-base simulator cannot reproduce every single physical cue
+                of a moving vehicle. The experience instead depends on how
+                effectively available feedback channels communicate what
+                the simulated vehicle is doing.
+              </p>
+            </div>
+
+            <div class="sim-feedback-flow">
+              <article>
+                <span>01</span>
+                <strong>Visual</strong>
+                <small>Speed, yaw, positioning, depth and environmental motion.</small>
+              </article>
+
+              <article>
+                <span>02</span>
+                <strong>Steering</strong>
+                <small>Force feedback communicates resistance and changes in vehicle response.</small>
+              </article>
+
+              <article>
+                <span>03</span>
+                <strong>Tactile</strong>
+                <small>Vibration can add road, kerb, engine and surface information.</small>
+              </article>
+
+              <article class="sim-driver-card">
+                <span>04</span>
+                <strong>Driver</strong>
+                <small>Perceives the feedback and adjusts steering, braking and throttle.</small>
+              </article>
+            </div>
+          </section>
+
+          <section class="sim-concept-panel">
+            <div class="sim-system-heading">
+              <p class="eyebrow">Vehicle Dynamics Connection</p>
+              <h3>From simulated tire behavior to something the driver can feel.</h3>
+              <p>
+                Steering feedback provides one physical connection between
+                vehicle dynamics and the driver. The goal is not simply stronger
+                force, but useful feedback that communicates changes in the
+                simulated vehicle. I used my simulator to connect to the physics introduced in my Vehicle Dynamics courses and understand how they can be felt through the steering wheel.
+              </p>
+            </div>
+
+            <div class="vehicle-feedback-loop">
+              <div class="feedback-node">
+                <span>01</span>
+                <strong>Tire Forces</strong>
+                <small>Grip · Slip · Lateral response</small>
+              </div>
+
+              <div class="feedback-node">
+                <span>02</span>
+                <strong>Vehicle Dynamics</strong>
+                <small>Yaw · Load transfer · Response</small>
+              </div>
+
+              <div class="feedback-node">
+                <span>03</span>
+                <strong>Steering Feedback</strong>
+                <small>Torque · Resistance · Vibration</small>
+              </div>
+
+              <div class="feedback-node feedback-driver">
+                <span>04</span>
+                <strong>Driver</strong>
+                <small>Perception + Correction</small>
+              </div>
+            </div>
+
+            <div class="driver-input-return">
+              <span>Steering · Throttle · Braking</span>
+              <strong>Driver Input → Vehicle Response</strong>
+            </div>
+          </section>
+
+        </div>
+
+        <div class="sim-research-card">
+          <div class="sim-research-title">
+            <p class="eyebrow">Research Connection</p>
+            <h3>Force feedback can affect both performance and experience.</h3>
+            <p class="sim-research-source">
+              Murphy, Toth, Hojaji &amp; Campbell — Computers in Human
+              Behavior Reports, 2026.
+            </p>
+            <a
+              class="sim-research-link"
+              href="https://www.sciencedirect.com/science/article/pii/S2451958826000679"
+              target="_blank"
+              rel="noopener"
+            >
+              Read the study ↗
+            </a>
+          </div>
+
+          <div class="sim-research-findings">
+            <div>
+              <strong>59</strong>
+              <span>Experienced sim racers studied</span>
+            </div>
+
+            <div>
+              <strong>FFB</strong>
+              <span>
+                Moderate force feedback produced faster laps than
+                high-intensity or no force feedback.
+              </span>
+            </div>
+
+            <div>
+              <strong>Haptics</strong>
+              <span>
+                Vibrotactile feedback did not improve performance,
+                but increased driver preference for the experience.
+              </span>
+            </div>
+          </div>
+        </div>
+
+      </section>
+
+      <div class="lab-project-grid sim-reflection-grid">
         <div class="lab-story">
           <p class="lab-label">Why it belongs here</p>
           <p>
@@ -412,85 +585,42 @@
               <li>Plan new feedback architecture: wind simulation, active ambient lighting</li>
               <li>Develop new software for audio improvements, potential AI driving coach with voice integration</li>
             </ul>
+          </details>
         </aside>
       </div>
     </section>
+    
 
 
     <!-- =====================================================
          TECHNICAL SKETCHBOOK
          ===================================================== -->
     <section class="section" id="sketchbook">
-      <div class="section-heading">
-        <p class="eyebrow">Technical Sketchbook</p>
-        <h2>Not everything needs to be a project.</h2>
-        <p>
-          Smaller artifacts can still show how I think and what I can make. This is a living collection
-          of CAD work, STLs, mechanisms, electronics, visual development, drawings, prototypes, class exercises, and experiments.
-        </p>
-      </div>
 
-      <div class="sketchbook-grid">
-        <article class="sketch-card">
-          <div class="sketch-thumb cad-thumb"><span>CAD</span></div>
-          <div class="sketch-copy">
-            <p class="project-kicker">Mechanical Design</p>
-            <h3>CAD & Mechanisms</h3>
-            <p>Part models, mechanisms, assemblies, design studies, and small solutions that are worth showing even when they are not full projects.</p>
-            <div class="tag-row"><span>SolidWorks</span><span>Rhino</span><span>AutoCAD</span></div>
-          </div>
-        </article>
+  <div class="section-heading compact-heading">
 
-        <article class="sketch-card">
-          <div class="sketch-thumb print-thumb"><span>STL</span></div>
-          <div class="sketch-copy">
-            <p class="project-kicker">Digital Fabrication</p>
-            <h3>Prints & STLs</h3>
-            <p>Designed parts, modified models, print-ready geometry, fixtures, adapters, costume components, and fabrication experiments.</p>
-            <div class="tag-row"><span>3D Printing</span><span>DFAM</span><span>Prototyping</span></div>
-          </div>
-        </article>
+    <p class="eyebrow">Technical Sketchbook</p>
 
-        <article class="sketch-card">
-          <div class="sketch-thumb electronics-thumb"><span>IO</span></div>
-          <div class="sketch-copy">
-            <p class="project-kicker">Electronics</p>
-            <h3>Controls & Bench Experiments</h3>
-            <p>Microcontrollers, sensors, servos, wiring, circuit tests, breadboards, and eventually custom PCB development.</p>
-            <div class="tag-row"><span>ESP32</span><span>Embedded</span><span>Mechatronics</span></div>
-          </div>
-        </article>
+    <h2>
+      CAD, prototypes, analysis, fabrication, and smaller experiments.
+    </h2>
 
-        <article class="sketch-card">
-          <div class="sketch-thumb art-thumb"><span>ART</span></div>
-          <div class="sketch-copy">
-            <p class="project-kicker">Visual Development</p>
-            <h3>Art, Graphics & Drawings</h3>
-            <p>Concept art, graphics, Photoshop work, Illustrator assets, sketches, visual studies, and other work that communicates an idea before it becomes hardware.</p>
-            <div class="tag-row"><span>Photoshop</span><span>Illustrator</span><span>Concept</span></div>
-          </div>
-        </article>
+    <p>
+      Not everything needs to become a full project. This space collects
+      smaller pieces of engineering work, design exploration, fabrication,
+      and technical experiments.
+    </p>
 
-        <article class="sketch-card">
-          <div class="sketch-thumb prototype-thumb"><span>R&amp;D</span></div>
-          <div class="sketch-copy">
-            <p class="project-kicker">Experiments</p>
-            <h3>Prototypes & Rabbit Holes</h3>
-            <p>Short technical investigations, failures, proof-of-concept builds, modding experiments, and things I explored simply because the question was interesting.</p>
-            <div class="tag-row"><span>Testing</span><span>Iteration</span><span>Curiosity</span></div>
-          </div>
-        </article>
+  </div>
 
-        <article class="sketch-card sketch-card-add">
-          <div class="sketch-add">+</div>
-          <div class="sketch-copy">
-            <p class="project-kicker">Living Collection</p>
-            <h3>Add the next thing.</h3>
-            <p>Duplicate this card whenever a piece of work says something useful about how you think, design, build, or communicate.</p>
-          </div>
-        </article>
-      </div>
-    </section>
+
+  <div
+    class="sketchbook-media-grid"
+    id="sketchbookGrid"
+  >
+  </div>
+
+</section>
 
 
     <!-- =====================================================
@@ -518,5 +648,7 @@
   </footer>
 
   <script src="assets/script.js"></script>
+  <script src="assets/sketchbook/sketchbook.js"></script>
+
 </body>
 </html>

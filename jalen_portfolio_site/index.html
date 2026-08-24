@@ -21,7 +21,7 @@
       <a href="#contact">Contact</a>
     </nav>
 
-    <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+    <button class="theme-toggle" id="themeToggle" type="button" aria-label="Toggle dark mode">
   <span class="theme-icon">◐</span>
 </button>
   </header>
@@ -47,8 +47,8 @@
             <h2>A quick look at how I work.</h2>
           </div>
           <div class="showcase-controls" aria-label="Project slideshow controls">
-            <button class="showcase-arrow" id="showcasePrev" aria-label="Previous featured project">←</button>
-            <button class="showcase-arrow" id="showcaseNext" aria-label="Next featured project">→</button>
+            <button class="showcase-arrow" id="showcasePrev" type="button" aria-label="Previous featured project">←</button>
+            <button class="showcase-arrow" id="showcaseNext" type="button" aria-label="Next featured project">→</button>
           </div>
         </div>
 
@@ -63,7 +63,7 @@
                     <div class="robot-arm"></div>
                     <div class="paint-panel"></div>
                   </div>
-                  <div class="showcase-photo" aria-hidden="true" style="background-image: url('assets/images/highlights/robotic-paint.jpg');"></div>
+                  <div class="showcase-photo" aria-hidden="true" style="background-image: url('assets/images/highlights/robots.png');"></div>
                   <span class="showcase-index">01</span>
                 </div>
                 <div class="showcase-copy">
@@ -184,11 +184,11 @@
         </div>
 
         <div class="showcase-dots" aria-label="Select featured project">
-          <button class="showcase-dot is-active" data-slide="0" aria-label="Show project 1"></button>
-          <button class="showcase-dot" data-slide="1" aria-label="Show project 2"></button>
-          <button class="showcase-dot" data-slide="2" aria-label="Show project 3"></button>
-          <button class="showcase-dot" data-slide="3" aria-label="Show project 4"></button>
-          <button class="showcase-dot" data-slide="4" aria-label="Show project 5"></button>
+          <button class="showcase-dot is-active" type="button" data-slide="0" aria-label="Show project 1"></button>
+          <button class="showcase-dot" type="button" data-slide="1" aria-label="Show project 2"></button>
+          <button class="showcase-dot" type="button" data-slide="2" aria-label="Show project 3"></button>
+          <button class="showcase-dot" type="button" data-slide="3" aria-label="Show project 4"></button>
+          <button class="showcase-dot" type="button" data-slide="4" aria-label="Show project 5"></button>
         </div>
       </div>
     </section>
@@ -274,7 +274,7 @@
       <div class="project-copy">
         <p class="project-kicker">Analytics · Automation</p>
 
-        <h3>PowerBI KPI & Workflow Analytics</h3>
+        <h3>Power BI KPI & Workflow Analytics</h3>
 
         <p>
           Power BI and process automation work focused on completion time,
@@ -450,7 +450,7 @@
       <div class="capability-grid">
         <div><h3>Mechanical</h3><p>CAD, prototyping, manufacturing systems, thermal systems, test planning.</p></div>
         <div><h3>Automation</h3><p>Power Automate, workflow design, SCADA-adjacent operations, process reliability.</p></div>
-        <div><h3>Software & Data</h3><p>Python,C++, Power BI, DAX, dashboards, technical visualization.</p></div>
+        <div><h3>Software & Data</h3><p>Python, C++, Power BI, DAX, dashboards, technical visualization.</p></div>
         <div><h3>Creative Tech</h3><p>Embedded systems, electronics, Photoshop, Illustrator, Blender, Maya</p></div>
       </div>
     </section>
@@ -458,13 +458,10 @@
     <section id="contact" class="section contact-section">
       <p class="eyebrow">Contact</p>
       <h2>Let’s build something memorable.</h2>
-      <p class="contact-copy">
-        Replace the links below with your preferred email, LinkedIn, résumé, and project repositories.
-      </p>
       <div class="hero-actions">
         <a class="button primary" href="mailto:jalensimpson502@icloud.com">Email me</a>
-        <a class="button secondary" href="https://www.linkedin.com/in/jalen-simpson" aria-label="LinkedIn profile">LinkedIn</a>
-        <a class="button secondary" href="#" aria-label="Resume placeholder">Résumé</a>
+        <a class="button secondary" href="https://www.linkedin.com/in/jalen-simpson" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn profile">LinkedIn</a>
+        <a class="button secondary" href="assets/documents/resume/Jalen-Simpson-Resume.pdf" target="_blank" rel="noopener" aria-label="Open résumé PDF">Résumé</a>
       </div>
     </section>
   </main>

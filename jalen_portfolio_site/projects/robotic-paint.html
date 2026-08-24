@@ -10,7 +10,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../assets/styles.css" />
 </head>
-<body>
+<body class="eco-page">
   <header class="site-header">
     <a class="brand" href="../index.html">JS</a>
     <nav>
@@ -20,7 +20,7 @@
       <a href="../index.html#experience">Experience</a>
       <a href="../index.html#contact">Contact</a>
     </nav>
-    <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode"><span class="theme-icon">◐</span></button>
+    <button class="theme-toggle" id="themeToggle" type="button" aria-label="Toggle dark mode"><span class="theme-icon">◐</span></button>
   </header>
 
   <main>
@@ -38,6 +38,8 @@
       </div>
     </section>
 
+    <article class="pro-case-body">
+
     <figure class="eco-hero-figure">
   <img
     class="eco-hero-image"
@@ -52,8 +54,8 @@
       <section class="contribution-panel">
         <div class="contribution-heading">
           <p class="eyebrow">My Contribution</p>
-          <h2>What I Did.</h2>
-          <p>This was one of the best examples for me to see the impact of a team with a very diverse set of skills and experiences. I used this opportunity to gain a wide range of knowledge from each person on the team ands leravage it to for the benefit of the trial.</p>
+          <h2>What I did.</h2>
+          <p>This was one of the best examples for me to see the impact of a team with a very diverse set of skills and experiences. I used this opportunity to gain a wide range of knowledge from each person on the team and leverage it to for the benefit of the trial.</p>
         </div>
         <div class="contribution-list">
           <div class="contribution-item"><span>01</span><p>Supported robot setup and operation throughout the trial sequence.</p></div>
@@ -78,7 +80,7 @@
         <div class="pro-story-card">
           <span>02</span>
           <p class="eyebrow">My Approach</p>
-          <h3>How I Attacked It.</h3>
+          <h3>How I attacked it.</h3>
           <p>I treated the work as a very controlled engineering trial rather than simply learning how to operate equipment. I focused on repeatable and careful preparation, consistent execution, fast identification of abnormal conditions, and documentation that captured both the result and the process that produced it.</p>
         </div>
         <div class="pro-story-card">
@@ -117,7 +119,7 @@
   <div class="eco-image-grid">
 
     <figure>
-      <img
+      <img loading="lazy"
         class="eco-gallery-image"
         src="../assets/images/professional/eco/panels.png"
         alt="Sprayed test panels from robotic paint trial"
@@ -128,7 +130,7 @@
     </figure>
 
     <figure>
-      <img
+      <img loading="lazy"
         class="eco-gallery-image"
         src="../assets/images/professional/eco/bells.png"
         alt="Bell components used in robotic paint trial"
@@ -139,7 +141,7 @@
     </figure>
 
     <figure>
-      <img
+      <img loading="lazy"
         class="eco-gallery-image"
         src="../assets/images/professional/eco/parts.png"
         alt="Painted trim parts from robotic paint trial"

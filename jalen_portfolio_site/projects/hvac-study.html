@@ -10,7 +10,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../assets/styles.css" />
 </head>
-<body>
+<body class="hvac-page">
   <header class="site-header">
     <a class="brand" href="../index.html">JS</a>
     <nav>
@@ -20,7 +20,7 @@
       <a href="../index.html#experience">Experience</a>
       <a href="../index.html#contact">Contact</a>
     </nav>
-    <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode"><span class="theme-icon">◐</span></button>
+    <button class="theme-toggle" id="themeToggle" type="button" aria-label="Toggle dark mode"><span class="theme-icon">◐</span></button>
   </header>
 
   <main>
@@ -38,19 +38,11 @@
       </div>
     </section>
 
-    <article class="pro-case-body">
-      <section class="pro-media-hero">
-        <div class="media-placeholder pro-media-placeholder">
-          <span>PROJECT VISUAL</span>
-          Add your strongest approved photo, diagram, dashboard screenshot, or short video here.
-        </div>
-      </section>
-
       <section class="contribution-panel">
         <div class="contribution-heading">
           <p class="eyebrow">My Contribution</p>
           <h2>What I did.</h2>
-          <p>This project was launched before my co-op rotation. However, over the course of my term, I led the project and gained full responsibilty over it with consistent checks being done with senior team members.</p>
+          <p>This project was launched before my co-op rotation. However, over the course of my term, I led the project and gained full responsibility over it with consistent checks being done with senior team members.</p>
         </div>
         <div class="contribution-list">
           <div class="contribution-item"><span>01</span><p>Built the analytical comparison between direct-fired, indirect-fired, and heat-pump-assisted HVAC configurations.</p></div>
@@ -86,35 +78,301 @@
         </div>
       </section>
 
-      <section class="process-section">
-        <div class="section-heading compact-heading">
-          <p class="eyebrow">Process Notes</p>
-          <h2>From Start to Finish.</h2>
-        </div>
-        <div class="process-rail">
-          <div class="process-step"><span>01</span><strong>Frame</strong><p>Define the equipment configurations and operating assumptions.</p></div>
-<div class="process-step"><span>02</span><strong>Model</strong><p>Convert heating / fuel assumptions into comparable emissions outputs.</p></div>
-<div class="process-step"><span>03</span><strong>Challenge</strong><p>Use supplier and stakeholder feedback to test the model assumptions.</p></div>
-<div class="process-step"><span>04</span><strong>Refine</strong><p>Add outside-air and other application-specific variables where they materially change the result.</p></div>
-<div class="process-step"><span>05</span><strong>Communicate</strong><p>Present the tradeoffs in a form that supports equipment decisions rather than just displaying calculations.</p></div>
-        </div>
-      </section>
+      <section class="hvac-evolution">
 
-      <section class="artifact-section">
-        <div class="section-heading compact-heading">
-          <p class="eyebrow">Technical Evidence</p>
-          <h2>Show the engineering, not just the outcome.</h2>
-          <p>Use this area for approved CAD, calculations, diagrams, screenshots, test footage, presentations, or sanitized report excerpts.</p>
+  <div class="hvac-evolution-heading">
+    <p class="eyebrow">Model Evolution</p>
+
+    <h2>
+      The analysis changed when the assumptions met the real system.
+    </h2>
+
+    <p>
+      The first model established a direction. Technical review exposed
+      where those assumptions did not represent real operating conditions,
+      leading to a more site-responsive decision model.
+    </p>
+  </div>
+
+
+  <div class="evolution-rail">
+
+    <article class="evolution-step">
+      <span class="evolution-number">01</span>
+
+      <div>
+        <p class="evolution-label">Initial Model</p>
+        <h3>Tonnage-Based Comparison</h3>
+        <p>
+          Built an initial framework around system capacity,
+          efficiency and assumed operating hours.
+        </p>
+      </div>
+    </article>
+
+
+    <div class="evolution-arrow">→</div>
+
+
+    <article class="evolution-step">
+      <span class="evolution-number">02</span>
+
+      <div>
+        <p class="evolution-label">Assumptions</p>
+        <h3>Operating Conditions</h3>
+        <p>
+          Used simplifying assumptions to estimate energy,
+          emissions and configuration performance.
+        </p>
+      </div>
+    </article>
+
+
+    <div class="evolution-arrow evolution-arrow-pivot">→</div>
+
+
+    <article class="evolution-step evolution-pivot">
+      <span class="evolution-number">03</span>
+
+      <div>
+        <p class="evolution-label">Technical Review</p>
+        <h3>The Turning Point</h3>
+        <p>
+          Supplier and SME review showed that outside-air requirements
+          and real-world application conditions materially changed
+          the interpretation of the results.
+        </p>
+      </div>
+    </article>
+
+
+    <div class="evolution-arrow evolution-arrow-pivot">→</div>
+
+
+    <article class="evolution-step">
+      <span class="evolution-number">04</span>
+
+      <div>
+        <p class="evolution-label">Reframed Model</p>
+        <h3>Climate + Outside Air</h3>
+        <p>
+          Added site climate, ventilation requirements and
+          equivalent heating demand to better represent operation.
+        </p>
+      </div>
+    </article>
+
+
+    <div class="evolution-arrow">→</div>
+
+
+    <article class="evolution-step">
+      <span class="evolution-number">05</span>
+
+      <div>
+        <p class="evolution-label">Decision Model</p>
+        <h3>Cost + Emissions + Applicability</h3>
+        <p>
+          Compared technology choices using a more realistic
+          combination of environmental and economic factors.
+        </p>
+      </div>
+    </article>
+
+  </div>
+
+</section>
+<section class="hvac-results">
+
+  <div class="hvac-results-heading">
+
+    <p class="eyebrow">Qualitative Results</p>
+
+    <h2>
+      The best configuration depended on more than efficiency alone.
+    </h2>
+
+    <p>
+      The refined analysis showed that technology selection changes
+      with climate, ventilation requirements, heating demand, fuel cost,
+      and the amount of supplemental heat required.
+    </p>
+
+  </div>
+
+
+  <div class="hvac-comparison-grid">
+
+
+    <!-- DIRECT FIRED -->
+
+    <article class="hvac-config-card">
+
+      <div class="hvac-config-top">
+        <span>01</span>
+        <p>Combustion Heating</p>
+      </div>
+
+      <h3>Direct Fired</h3>
+
+      <div class="hvac-metric-list">
+
+        <div>
+          <span>Direct Emissions</span>
+          <strong>Higher</strong>
         </div>
-        <div class="artifact-grid">
-          <div class="artifact-placeholder"><span>VISUAL 01</span><strong>Primary technical artifact</strong><small>CAD / dashboard / test setup / diagram</small></div>
-          <div class="artifact-placeholder"><span>VISUAL 02</span><strong>Iteration or detail</strong><small>Before &amp; after / comparison / process detail</small></div>
+
+        <div>
+          <span>Gas Dependency</span>
+          <strong>Higher</strong>
         </div>
-      </section>
+
+        <div>
+          <span>Initial Cost</span>
+          <strong>Lower</strong>
+        </div>
+
+      </div>
+
+      <p class="hvac-config-note">
+        Simple and efficient heating, but application depends heavily
+        on sufficient outside-air requirements.
+      </p>
+
+    </article>
+
+
+
+    <!-- INDIRECT FIRED -->
+
+    <article class="hvac-config-card">
+
+      <div class="hvac-config-top">
+        <span>02</span>
+        <p>Separated Combustion</p>
+      </div>
+
+      <h3>Indirect Fired</h3>
+
+      <div class="hvac-metric-list">
+
+        <div>
+          <span>Direct Emissions</span>
+          <strong>Reduced</strong>
+        </div>
+
+        <div>
+          <span>Gas Dependency</span>
+          <strong>Higher</strong>
+        </div>
+
+        <div>
+          <span>Initial Cost</span>
+          <strong>Moderate</strong>
+        </div>
+
+      </div>
+
+      <p class="hvac-config-note">
+        Separates combustion products from the supply air, but adds
+        components, maintenance, and system complexity.
+      </p>
+
+    </article>
+
+
+
+    <!-- HEAT PUMP -->
+
+    <article class="hvac-config-card hvac-preferred-card">
+
+      <div class="hvac-config-top">
+        <span>03</span>
+        <p>Electrified Heating</p>
+      </div>
+
+      <h3>Heat Pump</h3>
+
+      <div class="hvac-metric-list">
+
+        <div>
+          <span>Direct Emissions</span>
+          <strong>Low</strong>
+        </div>
+
+        <div>
+          <span>Gas Dependency</span>
+          <strong>Lower</strong>
+        </div>
+
+        <div>
+          <span>Initial Cost</span>
+          <strong>Higher</strong>
+        </div>
+
+      </div>
+
+      <p class="hvac-config-note">
+        Reduces supplemental gas-heating demand, but performance and
+        economics remain sensitive to climate and operating conditions.
+      </p>
+
+    </article>
+
+  </div>
+
+
+
+  <!-- DECISION DRIVERS -->
+
+  <div class="hvac-decision-strip">
+
+    <div class="hvac-decision-copy">
+
+      <p class="eyebrow">What Changed the Decision</p>
+
+      <h3>
+        A single national answer hid important site differences.
+      </h3>
+
+    </div>
+
+
+    <div class="hvac-driver-list">
+
+      <div>
+        <span>01</span>
+        <strong>Climate</strong>
+        <small>Heating demand varies substantially by location.</small>
+      </div>
+
+      <div>
+        <span>02</span>
+        <strong>Outside Air</strong>
+        <small>Ventilation requirements affect heating load and applicability.</small>
+      </div>
+
+      <div>
+        <span>03</span>
+        <strong>Supplemental Heat</strong>
+        <small>Backup heating requirements change system performance.</small>
+      </div>
+
+      <div>
+        <span>04</span>
+        <strong>Lifecycle Cost</strong>
+        <small>First cost alone does not determine the strongest option.</small>
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
 
       <section class="takeaway-card">
         <p class="eyebrow">Takeaway</p>
-        <h2>The biggest takeaway from this project was that a study can always be more detailed. The goal is to limit assumptions in order to continously improve the decision-making process. The results of this project demonstrated the value of iterative analysis and futher stakeholder engagement.</h2>
+        <h2>The biggest takeaway from this project was that a study can always be more detailed. The goal is to limit assumptions in order to continuously improve the decision-making process. The results of this project demonstrated the value of iterative analysis and further stakeholder engagement.</h2>
       </section>
 
       <p class="case-back"><a class="text-link" href="../index.html#work">← Back to selected work</a></p>

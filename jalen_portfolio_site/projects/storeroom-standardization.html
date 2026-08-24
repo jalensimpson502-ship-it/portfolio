@@ -10,7 +10,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../assets/styles.css" />
 </head>
-<body>
+<body class="storeroom-page">
   <header class="site-header">
     <a class="brand" href="../index.html">JS</a>
     <nav>
@@ -20,7 +20,7 @@
       <a href="../index.html#experience">Experience</a>
       <a href="../index.html#contact">Contact</a>
     </nav>
-    <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode"><span class="theme-icon">◐</span></button>
+    <button class="theme-toggle" id="themeToggle" type="button" aria-label="Toggle dark mode"><span class="theme-icon">◐</span></button>
   </header>
 
   <main>
@@ -38,11 +38,13 @@
       </div>
     </section>
 
+    <article class="pro-case-body">
+
   
       <section class="contribution-panel">
         <div class="contribution-heading">
           <p class="eyebrow">My Contribution</p>
-          <h2>What I DId</h2>
+          <h2>What I did.</h2>
           <p>This was a project that I practically launched. My contributions were the first steps towards this initiative.</p>
         </div>
         <div class="contribution-list">
@@ -118,7 +120,7 @@
 
     <figure class="storeroom-visual-card">
 
-      <img
+      <img loading="lazy"
         class="storeroom-gallery-image"
         src="../assets/images/professional/gs/gs.png"
         alt="Physical manufacturing storeroom used for layout documentation"
@@ -138,7 +140,7 @@
 
     <figure class="storeroom-visual-card">
 
-      <img
+      <img loading="lazy"
         class="storeroom-gallery-image storeroom-cad-image"
         src="../assets/images/professional/gs/2D.png"
         alt="Sanitized 2D AutoCAD storeroom layout"
@@ -159,7 +161,7 @@
 
     <figure class="storeroom-visual-card storeroom-wide-card">
 
-      <img
+      <img loading="lazy"
         class="storeroom-gallery-image storeroom-3d-image"
         src="../assets/images/professional/gs/3D.png"
         alt="Sanitized 3D storeroom layout model"
