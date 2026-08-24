@@ -2813,3 +2813,167 @@ body.dark-mode .storeroom-hero-image {
   }
 
 }
+/* =========================================
+   PERSONAL PROJECT MEDIA
+   ========================================= */
+
+.lab-project-media {
+  width: min(100%, 950px);
+  margin: 48px auto 0;
+}
+
+.lab-media-hero {
+  margin: 0;
+}
+
+.lab-media-hero img,
+.lab-media-hero video {
+  width: 100%;
+  height: auto;
+  display: block;
+
+  border-radius: 24px;
+
+  background: #111;
+
+  box-shadow:
+    0 22px 55px rgba(0,0,0,.14);
+}
+
+
+/* Two-image layout */
+
+.lab-media-pair {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+
+  gap: 18px;
+
+  margin-top: 18px;
+}
+
+.lab-media-pair figure {
+  margin: 0;
+}
+
+.lab-media-pair img {
+  width: 100%;
+
+  aspect-ratio: 4 / 3;
+
+  display: block;
+
+  object-fit: cover;
+
+  border-radius: 20px;
+
+  background: #111;
+}
+
+
+/* CAD screenshots should not crop */
+
+.lab-media-pair img.media-contain {
+  object-fit: contain;
+
+  padding: 14px;
+
+  background: #18181a;
+}
+
+
+/* Video */
+
+.lab-project-video {
+  width: 100%;
+  height: auto;
+
+  display: block;
+
+  margin-top: 18px;
+
+  border-radius: 24px;
+
+  background: #000;
+
+  box-shadow:
+    0 22px 55px rgba(0,0,0,.16);
+}
+
+
+/* Captions */
+
+.lab-project-media figcaption {
+  margin-top: 10px;
+
+  color: var(--muted);
+
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+
+/* Dark mode */
+
+body.dark-mode .lab-media-hero img,
+body.dark-mode .lab-media-hero video,
+body.dark-mode .lab-project-video {
+  box-shadow:
+    0 22px 55px rgba(0,0,0,.42);
+}
+
+
+/* Mobile */
+
+@media (max-width: 750px) {
+
+  .lab-media-pair {
+    grid-template-columns: 1fr;
+  }
+
+}
+/* Iron Man vertical demo */
+
+.ironman-video-figure {
+  width: 100%;
+  margin: 28px auto 0;
+  text-align: center;
+}
+
+.ironman-video {
+  width: min(100%, 420px);
+  height: auto;
+
+  margin: 0 auto;
+
+  border-radius: 22px;
+
+  object-fit: contain;
+}
+
+.ironman-video-figure figcaption {
+  max-width: 420px;
+  margin: 10px auto 0;
+
+  text-align: left;
+}
+/* Web-Shooter vertical demo */
+
+.webshooter-video-figure {
+  width: 100%;
+  margin: 28px auto 0;
+  text-align: center;
+}
+
+.webshooter-video {
+  width: min(100%, 420px);
+  height: auto;
+  margin: 0 auto;
+  object-fit: contain;
+}
+
+.webshooter-video-figure figcaption {
+  max-width: 420px;
+  margin: 10px auto 0;
+  text-align: left;
+}
