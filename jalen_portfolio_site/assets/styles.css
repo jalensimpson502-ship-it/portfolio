@@ -1300,14 +1300,6 @@ body.dark-mode .lab-home-card {
 
 .showcase-fallback { z-index: 1; }
 
-.showcase-photo {
-  position: absolute;
-  inset: 0;
-  z-index: 2;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-}
 
 .showcase-index {
   position: absolute;

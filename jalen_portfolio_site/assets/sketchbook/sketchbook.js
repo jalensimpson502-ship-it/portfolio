@@ -1,17 +1,6 @@
 (() => {
   const mount = document.getElementById("sketchbookGrid");
   if (!mount) return;
-
-  /*
-    To add another item later:
-    1. Drop the file into assets/sketchbook/images or assets/sketchbook/videos.
-    2. Duplicate one object below.
-    3. Change title, category, media, type, description, and tags.
-
-    type: "image" or "video"
-    fit: "cover" or "contain"
-    size: "normal" or "wide"
-  */
   const sketchbookItems = [
     {
       title: "Engine Assembly Study",
